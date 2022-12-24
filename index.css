@@ -1,8 +1,10 @@
 * {
-  font-family: "Abel", sans-serif;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  background-color: #000517;
 }
+
 
 #Starting {
   width: 100%;
@@ -15,6 +17,7 @@
 }
 
 #StartingContent {
+  font-family: "Abel", sans-serif;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -23,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
   /* 
   flex-wrap: wrap;
   align-content: center; */
@@ -33,13 +37,16 @@
   color: #46494c;
   font-size: 100px;
   margin-bottom: 100px;
+  background-color: transparent;
 }
 
 #StartingContent .intro {
+  font-size: 14px;
   color: #f0efeb;
 
   /* color: #3a606e; */
-  letter-spacing: 4px;
+  letter-spacing: 4.5px;
+  background-color: transparent;
 }
 
 #StartingContent .button {
@@ -47,20 +54,20 @@
   border-radius: 10px;
   background-color: black;
   opacity: 0.2;
+  cursor: pointer;
 }
 
-#StartingContent .skip {
+button {
   font-family: "Nunito", sans-serif;
   color: #f0efeb;
   background-color: Transparent;
   border: none;
-  cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 4px;
-}
+  cursor: pointer;
+} 
 
-
-@media only screen and (max-width: 1900px){
+/* @media only screen and (max-width: 1900px){
 
     #StartingContent {
         margin-top: 65px;
@@ -114,4 +121,63 @@
         height: 100%;
         width: 100%;
       }
+} */
+
+
+#intial{
+  /* position: fixed;
+  top: 0; */
+  color: #f0efeb;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000517;
+}
+
+#headerControl{
+  width: 100%;
+  /* height: 80px; */
+}
+#header{
+  font-family: 'Kanit', sans-serif;
+  /* width: 100%; */
+  margin: 8px 50px 8px 50px;
+  height: 80px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  background-color:#040710;
+}
+
+
+
+#intial #left-side #autonomy{
+   margin-left: 30px;
+}
+
+#intial #left-side{
+  font-size: 14px;
+  letter-spacing: 2.5px;
+}
+
+#intial #right-side #menu{
+   margin-left: 30px;
+}
+
+#intial #right-side{
+  font-size: 14px;
+  letter-spacing: 2.5px; 
+}
+
+
+#intial #center{
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+#carPresentation{
+  border-radius: 80px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-right: 40px;
 }
