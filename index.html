@@ -17,9 +17,9 @@
     <title>ZOOX</title>
   </head>
   <body>
+
     <div id="Starting">
-      <video class="VideoWidth" width="100%" loop muted autoplay>
-        <source src="Videos\HomePageVideo\home-0-splash-intro.mp4" />
+      <video src="Videos\HomePageVideo\home-0-splash-intro.mp4" id="myVideo" class="VideoWidth" width="100%" loop muted autoplay>
       </video>
     </div>
 
@@ -29,53 +29,62 @@
 
       <div class="button">
         <button class="skip" id="skip" type="button">
-          SKIP >
+          <a href="#carVideo"> SKIP ></a>
         </button>
       </div>
     </div>
 
-    <div id="intial">
-      <div id="headerControl">
-        <div id="header">
-          <div id="left-side">
-            <span id="vehicle">VEHICLE</span>
-            <span id="autonomy">AUTONOMY</span>
-          </div>
+    
 
-          <div id="center">ZOOX</div>
+  <div id="intial">
 
-          <div id="right-side">
-            <span id="careers">CAREERS</span>
-            <span id="menu">MENU</span>
-          </div>
+    <div id="headerControl"> 
+
+      <div id="header"> 
+
+        <div id="left-side">
+          <span id="vehicle">VEHICLE</span>
+          <span id="autonomy">AUTONOMY</span>
         </div>
+
+        <div id="center">ZOOX</div>
+
+        <div id="right-side">
+          <span id="careers">CAREERS</span>
+          <span id="menu">MENU</span>
+        </div>
+
+      </div>
+      
+    </div> 
+
+
+    <div id="carPresentation">
+      <div  class="parts">
+        <video   id="carVideo" width="100%" loop muted autoplay>
+          <source src="Videos\HomePageVideo\home-1-unveil-lights-up.mp4" autoplay muted/>
+        </video>
       </div>
 
-      <div id="carPresentation">
+      <div id="carWheel" class="parts">
+        <img
+          width="100%"
+          src="Images\HomePageImages\home-glamour-1.jpg"
+          alt=""
+        />
+      </div>
 
-        <div id="carVideo" class="parts">
-          <video width="100%" src="Videos\HomePageVideo\home-1-unveil-lights-up.mp4" loop muted autoplay>
-            <!-- <source src="Videos\Home page video\home-0-splash-intro.mp4" /> -->
-          </video>
-        </div>
-
-        <div id="carWheel" class="parts">
-          <img
-            width="100%"
-            src="Images\HomePageImages\home-glamour-1.jpg"
-            alt=""
-          />
-        </div>
-
-        <div id="carTop" class="parts">
-          <img
-            width="100%"
-            src="Images\HomePageImages\home-glamour-2.jpg"
-            alt=""
-          />
-        </div>
+      <div id="carTop" class="parts">
+        <img
+          width="100%"
+          src="Images\HomePageImages\home-glamour-2.jpg"
+          alt=""
+        />
       </div>
     </div>
+
+  </div>
+    
   </body>
   <script src="app.js"></script>
 </html>
