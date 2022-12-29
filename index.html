@@ -12,15 +12,25 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- cssFile -->
     <link rel="stylesheet" href="index.css" />
     <title>ZOOX</title>
   </head>
-  <body>
 
+  <body>
     <div id="Starting">
-      <video src="Videos\HomePageVideo\home-0-splash-intro.mp4" id="myVideo" class="VideoWidth" width="100%" loop muted autoplay>
-      </video>
+      <video
+        src="Videos\HomePageVideo\home-0-splash-intro.mp4"
+        id="myVideo"
+        class="VideoWidth"
+        width="100%"
+        muted
+        autoplay
+      ></video>
     </div>
 
     <div id="StartingContent">
@@ -28,63 +38,80 @@
       <div class="future">The future is for riders</div>
 
       <div class="button">
-        <button class="skip" id="skip" type="button">
-          <a href="#carVideo"> SKIP ></a>
-        </button>
+        <button class="btn" id="skip" type="button">SKIP<i class="material-icons">chevron_right</i></button>
       </div>
     </div>
 
-    
+    <div id="intial">
+      <div id="headerControl">
+        <div id="header">
+          <div id="left-side">
+            <span id="vehicle">VEHICLE</span>
+            <span id="autonomy">AUTONOMY</span>
+          </div>
 
-  <div id="intial">
+          <div id="center">ZOOX</div>
 
-    <div id="headerControl"> 
-
-      <div id="header"> 
-
-        <div id="left-side">
-          <span id="vehicle">VEHICLE</span>
-          <span id="autonomy">AUTONOMY</span>
+          <div id="right-side">
+            <span id="careers">CAREERS</span>
+            <span id="menu">MENU</span>
+          </div>
         </div>
-
-        <div id="center">ZOOX</div>
-
-        <div id="right-side">
-          <span id="careers">CAREERS</span>
-          <span id="menu">MENU</span>
-        </div>
-
       </div>
+
+      <div id="carPresentation">
+        <div class="parts">
+          <video id="carVideo" width="100%" muted>
+            <source src="Videos\HomePageVideo\home-1-unveil-lights-up.mp4" />
+          </video>
+        </div>
+
+        <div id="downArrow">
+          <button id="btn-down"><i id="down" class="material-icons">expand_more</i></button>
+        </div>
+
+        <div id="carWheelInfo">
+          <div id="carWheel" class="parts">
+            <img
+              width="100%"
+              src="Images\HomePageImages\home-glamour-1.jpg"
+              alt=""
+            />
+          </div>
+
+          <div id="carWheelDescription">
+            Fully<br>
+              autonomous
+          </div>
+        </div>
+        
+
+        <div id="carTopInfo">
+
+          <div id="carTop" class="parts">
+            <img
+              width="100%"
+              src="Images\HomePageImages\home-glamour-2.jpg"
+              alt=""
+            />
+          </div>
+
+           <div id="carTopDescription">
+            All-electric
+           </div>
+
+        </div>
+
+
+        <div id="keyword">
+          <div id="words">
+            Built for riders,<br>
+            not drivers
+          </div>
+        </div>
       
-    </div> 
-
-
-    <div id="carPresentation">
-      <div  class="parts">
-        <video   id="carVideo" width="100%" loop muted autoplay>
-          <source src="Videos\HomePageVideo\home-1-unveil-lights-up.mp4" autoplay muted/>
-        </video>
-      </div>
-
-      <div id="carWheel" class="parts">
-        <img
-          width="100%"
-          src="Images\HomePageImages\home-glamour-1.jpg"
-          alt=""
-        />
-      </div>
-
-      <div id="carTop" class="parts">
-        <img
-          width="100%"
-          src="Images\HomePageImages\home-glamour-2.jpg"
-          alt=""
-        />
       </div>
     </div>
-
-  </div>
-    
   </body>
   <script src="app.js"></script>
 </html>

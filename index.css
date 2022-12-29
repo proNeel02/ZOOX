@@ -5,7 +5,6 @@
   background-color: #000517;
 }
 
-
 #Starting {
   width: 100%;
   min-height: 100vh;
@@ -33,11 +32,12 @@
 }
 
 #StartingContent .future {
-  /* color: #f0efeb; */
-  color: #46494c;
-  font-size: 100px;
+  color: #f0efeb;
+  /* color: #46494c; */
+  font-size: 80px;
   margin-bottom: 100px;
   background-color: transparent;
+
 }
 
 #StartingContent .intro {
@@ -57,11 +57,14 @@
   cursor: pointer;
 }
 
-button a{
+#StartingContent button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   color: #f0efeb;
-  background-color: Transparent;
+  /* background-color: Transparent; */
   border: none;
   font-size: 13px;
   letter-spacing: 4px;
@@ -134,11 +137,11 @@ button a{
 
 #headerControl{
   width: 100%;
-
+ 
 }
+
 #header{
   font-family: 'Kanit', sans-serif;
-  /* width: 100%; */
   margin: 8px 50px 2px 50px;
   /* padding: -15px auto -15px auto; */
   height: 75px;
@@ -148,7 +151,6 @@ button a{
   border-radius: 20px;
   background-color:#040710;
 }
-
 
 
 #left-side #autonomy{
@@ -181,6 +183,82 @@ button a{
   overflow: hidden;
   margin-left: 40px;
   margin-right: 40px;
-  /* position: absolute; */
   height: auto;
+  font-family: 'Kanit', sans-serif;
+}
+
+#downArrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -170px;
+  margin-bottom: 50px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+#btn-down{
+  background: transparent;
+  border-radius: 10px;
+  border :1.80px solid #fff;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+#downArrow button:hover{
+  background-color: coral;
+  font-size: 100px;
+}
+
+#downArrow #down {
+  
+  background-color: transparent;
+  color: #ffff;
+  font-size: 25px;
+
+}
+
+#carVideo{
+  margin-top: -70px;
+}
+
+#carWheelInfo{
+  position: relative;
+}
+
+#carWheelDescription{
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  
+  font-size: 50px;
+  background-color: transparent;
+}
+
+#carTopInfo{
+  position: relative;
+}
+
+#carTopDescription{
+  position: absolute;
+  top: 450px;
+  left: 890px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  background-color: transparent;
+}
+
+#keyword{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 60px;
+}
+
+#words{
+  width: 100%;
+  text-align: center;
 }
